@@ -1,0 +1,118 @@
+body {
+	font-family: 'VT323', monospace;
+	background-color: black;
+	color: white;
+}
+
+h1{
+	color: green;
+	text-align: center;
+	font-size: 48pt;
+}
+
+#titleWrapper
+{
+	margin:auto;
+	margin-top:2%;
+	width:50%;
+}
+
+#titleBox
+{
+	margin:auto;
+	color:white;
+	text-align: center;
+	font-size: 18pt;
+	background-color: blue;
+	border-style: double;
+	padding: -5%;
+}
+
+#welcome
+{
+	margin-top: -5%;
+}
+
+h3
+{
+	color: green;
+}
+
+#centerWrapper
+{
+	margin:auto;
+	margin-top: 10%;
+}
+
+#centerBox
+{
+	margin:auto;
+	text-align: center;
+	font-size: 18pt;
+	color: lightgreen;
+}
+
+#list
+{
+	list-style: none;
+	margin-left: 40%;
+	text-align: left;
+}
+
+#modalWrapper
+{
+	margin:auto;
+	padding: 10%;
+	margin-left:3%;
+	margin-right: 3%;
+	visibility: hidden;
+	margin-top: -25%;
+
+}
+
+#modalBox
+{
+	margin:auto;
+	padding:3%;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	border-width: 7px;
+	border-style: double;
+}
+
+#sharewareText
+{
+	text-align: left;
+}
+
+#sharewareTitle
+{
+	font-size: 18pt;
+	margin-top: -3%;
+	
+}
+
+#anyKey
+{
+	animation: blinky .9s infinite;
+	margin: auto;
+	width: 25%;
+	background-color: darkgray;
+}
+
+#anyWrapper
+{
+	margin:auto;
+	margin-left: 25%;
+}
+
+@keyframes blinky
+{
+	0% {color: gray; background-color: black;}
+	40% {color: gray; background-color: black;}
+	50% {color: darkgray; background-color: white;}
+	70% {color: darkgray; background-color: white;}
+	100% {color: gray; background-color: black;}
+		
+}
