@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="winampskin.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="topThird">
+
+			<div id="titlebar">
+			<div class="yellowbar"></div>
+			<div id="title">
+				<p>Jankamp v 3.0</p>
+			</div>
+			<div class="yellowbar"></div>
+			<div id="openCloseIcons">
+				<img class="controlButton" id="closeIcon" src="https://cdn-icons-png.flaticon.com/512/1828/1828944.png">
+			</div>
+
+		</div>
+
+		<div id="playerWindow">
+
+			<div id="playingContainer"> <!--the current song info-->
+				<div id="time">
+					<p>00:00</p>
+				</div>
+				<div id="currentSongContainer">
+					<div id="currentSongInfo">
+						<p class="songText" id="currentArtist">Cryptkeeper 5 - </p>
+						<p class="songText" id="currentTitle">Get In The Mood </p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="controlPanel">
+				<div id="volumeContainer">
+					<input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
+				</div>
+
+				<div id="controlContainer">
+					<img class="controlButton" id="rewindButton" src="https://cdn-icons-png.flaticon.com/512/4211/4211379.png">
+					<img class="controlButton" id="playButton" src="https://cdn-icons-png.flaticon.com/512/4211/4211344.png">
+					<img class="controlButton" id="stopButton" src="https://cdn-icons-png.flaticon.com/512/4211/4211352.png">
+					<img class="controlButton" id="ffButton" src="https://cdn-icons-png.flaticon.com/512/4211/4211373.png">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+<footer>
+	<script src="player.js"></script>
+</footer>
+
+

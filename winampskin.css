@@ -1,0 +1,198 @@
+
+
+body
+{
+	background-color: green;
+	font-family: 'Inconsolata', monospace;
+}
+
+#closeIcon
+{
+	width:18px;
+	height:18px;
+	background-color: yellow;
+	justify-self: right;
+	border-radius: 20%;
+}
+
+#closeIcon:hover
+{
+	background-color: red;
+}
+
+
+#titlebar
+{
+	height:20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #222222;
+	border: 2px inset black;
+}
+
+#title
+{
+	background-color: #222;
+	width: 50%;
+	text-align: center;
+	margin:auto;
+	border: 2px inset #aaa000;
+}
+
+#title > p
+{
+	color: yellow;
+	margin: auto;
+	font-size: 12px;
+}
+
+.yellowbar
+{
+	height: 6px;
+	margin: 4px 10px auto 10px;
+	width: 40%;
+	padding: 0px 10px 0px 10px;
+	border: 2px ridge #aaa000;
+	background-image: linear-gradient(yellow,#222);
+
+}
+
+.yellowbar > p
+{
+	font: sans-serif;
+	margin-top: -4px;
+	font-size: 9px;
+	line-height: .5;
+}
+
+
+
+#topThird
+{
+	width:500px;
+	margin-left:25%;
+	background: linear-gradient(to right bottom, #222 0 30%, #999, #222);
+	border: 2px ridge black;
+}
+
+
+#playingContainer
+{
+	background-color: black;
+	color: yellow;
+	display: flex;
+	margin:auto;
+	border: 2x ridge black;
+}
+
+#time
+{
+	margin:auto;
+	font-size: 18pt;
+	background-color: black;
+	padding-left:-10%;
+}
+
+#time > p
+{
+	margin-left: -75%;
+}
+
+#currentSongContainer
+{
+	overflow:hidden;
+}
+
+#currentSongInfo
+{
+	margin:auto;
+	padding-top: 5%;
+	display:flex;
+	margin-right: -10%;
+	animation: scroll 5s infinite linear;
+}
+
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+#controlPanel
+{
+	display: flex;
+	flex-direction: row-reverse;
+	margin: auto;
+	padding-right: 5%;
+	border: 2px inset black;
+}
+
+#controlContainer
+{
+	margin:auto;
+	padding-right: 5%;
+}
+
+.controlButton
+{
+	width:20px;
+	height:20px;
+	margin:-2%;
+	margin-top: 0%;
+	border: 1px outset black;
+}
+
+.controlButton:hover
+{
+	background-color: #888;
+}
+
+
+#volumeContainer
+{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#volumeSlider
+{
+	height: 8px;
+	appearance: none;
+	border: 1px solid yellow;
+	background: linear-gradient(to right, green, yellow, red);
+	outline: none;
+	-webkit-appearance: none;
+	color:black;
+	margin-top: 3px;
+}
+
+#volumeSlider::-webkit-slider-thumb 
+{
+  -webkit-appearance: none;
+  appearance: none;
+  background: #000;
+  cursor: pointer;
+  border: 1px solid yellow;
+  border-radius: 0;
+  height: 12px;
+  width: 20px;
+}
+
+/* for firefox */
+#volumeSlider::-moz-range-thumb 
+{
+	appearance:none;
+	background: #000;
+ 	cursor: pointer;
+ 	border: 1px solid yellow;
+ 	border-radius: 0;
+ 	height: 12px;
+ 	width: 20px;
+}
